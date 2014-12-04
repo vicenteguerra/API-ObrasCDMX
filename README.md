@@ -14,7 +14,7 @@ http://vital-ego.box.codio.io:9500/
 ```
 
 ##How the Pack was prepared
-This Starter Pack was built on the Node+Gunr+MongoDB Stack. We than ran the following commands before creating the Pack.
+This Starter Pack was built on the Node+Grunt+MongoDB Stack. We than ran the following commands before creating the Pack.
 
 ```bash
 npm install -g express
