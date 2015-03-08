@@ -5,10 +5,32 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+//
 var routes = require('./routes/index');
 var datos = require('./routes/datos');
 
 var app = express();
+
+/*
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:9500/obrasCDMX',function (error) {
+//mongoose.connect('mongodb://ted:ted@ds061797.mongolab.com:61797/theenlighteneddeveloper', function (error) {
+   if (error) {
+       console.log(error);
+   }
+});
+
+*/
+
+
+var MongoClient = require('mongoose');
+
+MongoClient.connect("mongodb://localhost:27017/obrascmdx", function(err, db){
+   if( !err ){
+        console.log("We are connected");
+   } else console.log(err);
+});
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
