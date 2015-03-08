@@ -1,33 +1,41 @@
-# Node+Express (4.9.0)
+Obras CDMX
 
-## Using the Pack
-To use the Pack, we created 2 menu options, which you can find on the right of the menu. These menus can be configured in the `.codio` file.
+OBRAS CDMX soluciona una problemática surgida a partir de una necesidad de la
+Agencia de Gestión Urbana (AGU) de la Ciudad de México para regular las intervenciones
+en la vía pública por parte de instituciones públicas y privadas.
 
-1. **Start Express Server** : Click this to start your Express server.
-1. **Preview** : Click to preview your app.
+Permitir al ciudadano prevenirse ante las diversas eventualidades que ocasionan
+las intervenciones en la vía pública.
 
-## Accessing the application
-To access your application from a browser, you can use the menu option described above. The url of your box can be found in the `Project->Box Info` menu and will look something like this
+---------------------------------------------------------------------------------
 
-```
-http://vital-ego.box.codio.io:9500/
-```
+API ObrasCDMX
 
-## How the Pack was prepared
-This Starter Pack was built on the `Node+Grun+MongoDB` Codio Certified Stack. We than ran the following commands before creating the Pack.
+GET https://henry-brenda.codio.io:9500/datos
 
-```bash
-npm install -g express
-npm install -g express-generator
-express .
-npm install
-```
+Devuelve un JSON con información de las obras en vías públicas que se van a realizar
+o se estan realizando en la Ciudad de México
 
-## Useful Links
+Estructura:
 
-- [Express site](http://expressjs.com/)
-- [Node](http://nodejs.org/)
-- [npm](https://www.npmjs.org/)
-- [Grunt](http://gruntjs.com/)
-- [MongoDB](https://www.mongodb.org)
-
+{
+    categoria: {type: String},
+    tipo_vialidad: {type: String},
+    superficie: {type: String},
+    status: {type: String},
+    delegacion: {type: String},
+    colonia: {type: String},
+    calle: {type: String},
+    fecha_inicio: {type: String},
+    fecha_termino: {type: String},
+    area_responsable : {type: String},
+    afectaciones: {type: String},
+    descripcion: {type: String},
+    ente_responsable: {type: String},
+    rubro: {type: String},
+    entre_calle1: {type: String},
+    entre_calle2: {type: String},
+    latitud: {type: String},
+    longitud: {type: String},
+    direccion: {type: String}
+}
