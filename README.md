@@ -39,3 +39,23 @@ Estructura:
     longitud: {type: String},
     direccion: {type: String}
 }
+
+Node JS + Express JS
+
+Dependencias:
+
+	"express"
+    "body-parser"
+    "cookie-parser"
+    "morgan"
+    "mongoose"
+    "serve-favicon"
+    "debug"
+    "jade"
+    "mongodb"
+
+Base de datos en MongoDB
+Obrascmdx
+
+
+
