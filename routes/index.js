@@ -1,4 +1,5 @@
 var express = require('express');
+var Intervenciones = require('../models/intervenciones')
 var router = express.Router();
 
 /* GET home page. */
@@ -8,8 +9,10 @@ router.get('/', function(req, res) {
 
 // CRON JOB
 var crontab = require('node-crontab');
-var jobId = crontab.scheduleJob("*/1 * * * *", function(){ //This will call this function every 2 minutes 
-    console.log("It's been 1 minutes!");
+var jobId = crontab.scheduleJob("*/30 * * * *", function(){ //This will call this function every 2 minutes 
+    console.log("Entro al cron");
+    var intervenciones = new Intervenciones();
+    console.log("It's been 30 minutes!");
 });
 
 module.exports = router;

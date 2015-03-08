@@ -2,9 +2,8 @@ var mongoose  = require ('mongoose'),
     Schema    = mongoose.Schema;
 
 var obrasSchema = new Schema({
-    categoria: {type: String, required: true},
+    categoria: {type: String},
     tipo_vialidad: {type: String},
-    longitud: {type: String},
     superficie: {type: String},
     status: {type: String},
     delegacion: {type: String},
@@ -22,7 +21,6 @@ var obrasSchema = new Schema({
     latitud: {type: String},
     longitud: {type: String},
     direccion: {type: String}
-  
 });
 
 module.exports = mongoose.model( 'codigo', obrasSchema );

@@ -11,17 +11,6 @@ var datos = require('./routes/datos');
 
 var app = express();
 
-/*
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:9500/obrasCDMX',function (error) {
-//mongoose.connect('mongodb://ted:ted@ds061797.mongolab.com:61797/theenlighteneddeveloper', function (error) {
-   if (error) {
-       console.log(error);
-   }
-});
-
-*/
-
 
 var MongoClient = require('mongoose');
 
