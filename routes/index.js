@@ -12,7 +12,6 @@ var crontab = require('node-crontab');
 var jobId = crontab.scheduleJob("*/30 * * * *", function(){ //This will call this function every 2 minutes 
     console.log("Entro al cron");
     //var intervenciones = new Intervenciones();
-   // console.log("It's been 30 minutes!");
 });
 
 module.exports = router;
